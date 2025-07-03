@@ -1,0 +1,298 @@
+/* Modal Video */
+.background-modal-banner-home {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 42, 41, 0.80);
+    backdrop-filter: blur(1.5px);
+    z-index: 999998;
+    top: 0;
+}
+
+/*
+.contenedor-modal-banner-home {
+    position: relative;
+} */
+.contenedor-modal-banner-home .modal-banner-home {
+    position: absolute;
+    /* top: 270px; */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+    width: 90%;
+    max-width: 719px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .contenedor-boton-cerrar-modal {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .boton-cerrar-modal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: top left 520px;
+}
+
+
+.contenedor-modal-banner-home .modal-banner-home .boton-cerrar-modal span {
+    display: block;
+    font-family: CIBFont Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    color: #2C2A29;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .boton-cerrar-modal img {
+    width: 14px;
+    height: 12px;
+    display: block;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .video-modal {
+    width: 100%;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .video-modal>iframe {
+    width: 100%;
+    height: 408px;
+    border-radius: 4px;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .video-modal .contenedor-img-modal {
+    width: 100%;
+    /* height: 408px; */
+    height: fit-content;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .video-modal .contenedor-img-modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .texto-modal {
+    padding: 17px 20px;
+}
+
+.contenedor-modal-banner-home .modal-banner-home .texto-modal p {
+    font-family: "CIBFontSans Bold", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    color: #2C2A29;
+}
+
+@media (max-width:767px) {
+    .contenedor-modal-banner-home .modal-banner-home {
+        max-width: 343px;
+    }
+
+    .contenedor-modal-banner-home .modal-banner-home .texto-modal {
+        padding: 4px 10px;
+    }
+
+    .contenedor-modal-banner-home .modal-banner-home .texto-modal p {
+        font-family: Open Sans;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contenedor-modal-banner-home .modal-banner-home .video-modal>iframe {
+        height: 213px;
+        border-radius: 9px;
+    }
+
+    .contenedor-modal-banner-home .modal-banner-home .video-modal .contenedor-img-modal {
+        /* height: 213px; */
+        height: fit-content;
+    }
+}
+
+@media only screen and (device-width: 375px)
+/* Anchura de pantalla del iPhone 8 */
+and (device-height: 667px)
+/* Altura de pantalla del iPhone 8 */
+and (-webkit-min-device-pixel-ratio: 2)
+/* Píxeles de retina */
+and (orientation: portrait)
+/* Orientación de retrato */
+    {
+    .contenedor-modal-banner-home .modal-banner-home .boton-cerrar-modal {
+        margin-left: auto;
+    }
+}
+
+/* Fin Modal */
+
+
+/* Modal Video */
+.background-modal-banner-home-1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 42, 41, 0.80);
+    backdrop-filter: blur(1.5px);
+    z-index: 999998;
+    top: 0;
+}
+
+/*
+.contenedor-modal-banner-home-1 {
+    position: relative;
+} */
+.contenedor-modal-banner-home-1 .modal-banner-home-1 {
+    position: absolute;
+    /* top: 270px; */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+    width: 90%;
+    max-width: 719px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .contenedor-boton-cerrar-modal {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .boton-cerrar-modal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: top left 520px;
+}
+
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .boton-cerrar-modal span {
+    display: block;
+    font-family: CIBFont Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 0;
+    color: #2C2A29;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .boton-cerrar-modal img {
+    width: 14px;
+    height: 12px;
+    display: block;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .video-modal {
+    width: 100%;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .video-modal>iframe {
+    width: 100%;
+    height: 408px;
+    border-radius: 4px;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .video-modal .contenedor-img-modal {
+    width: 100%;
+    /* height: 408px; */
+    height: fit-content;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .video-modal .contenedor-img-modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .texto-modal {
+    padding: 17px 20px;
+}
+
+.contenedor-modal-banner-home-1 .modal-banner-home-1 .texto-modal p {
+    font-family: "CIBFontSans Bold", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    color: #2C2A29;
+}
+
+@media (max-width:767px) {
+    .contenedor-modal-banner-home-1 .modal-banner-home-1 {
+        max-width: 343px;
+    }
+
+    .contenedor-modal-banner-home-1 .modal-banner-home-1 .texto-modal {
+        padding: 4px 10px;
+    }
+
+    .contenedor-modal-banner-home-1 .modal-banner-home-1 .texto-modal p {
+        font-family: Open Sans;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .contenedor-modal-banner-home-1 .modal-banner-home-1 .video-modal>iframe {
+        height: 213px;
+        border-radius: 9px;
+    }
+
+    .contenedor-modal-banner-home-1 .modal-banner-home-1 .video-modal .contenedor-img-modal {
+        /* height: 213px; */
+        height: fit-content;
+    }
+}
+
+@media only screen and (device-width: 375px)
+/* Anchura de pantalla del iPhone 8 */
+and (device-height: 667px)
+/* Altura de pantalla del iPhone 8 */
+and (-webkit-min-device-pixel-ratio: 2)
+/* Píxeles de retina */
+and (orientation: portrait)
+/* Orientación de retrato */
+    {
+    .contenedor-modal-banner-home-1 .modal-banner-home-1 .boton-cerrar-modal {
+        margin-left: auto;
+    }
+}
+
+/* Fin Modal */

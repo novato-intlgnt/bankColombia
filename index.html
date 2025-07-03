@@ -1,273 +1,398 @@
-<<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bancolombia - Personas</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icons/GRUPO-BANCOLOMBIA_Symbol_6.ico"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+    <script src="js/main.js" defer></script>
+    <script src="js/include.js" defer></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <div class="header-info">
-            <span>Línea Nacional: 01 8000 9 12345</span>
-            <span>Desde Bogotá: (601) 343 00 00</span>
-          </div>
-          <div class="header-links">
-            <a href="#">Empresas</a>
-            <a href="#">Bancolombia en el mundo</a>
-            <a href="#">Sostenibilidad</a>
-          </div>
-        </div>
-      </div>
+    <div data-include="components/header.html"></div>
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <button class="hero__nav hero__nav--prev" aria-label="Anterior">
+            ←
+          </button>
 
-      <nav class="navbar">
-        <div class="container">
-          <div class="nav-brand">
-            <img src="#" alt="Logo Bancolombia" class="logo" />
+          <div class="hero-container">
+            <article class="hero-article">
+              <div class="hero__text">
+                <span class="hero__label">Tu360Movilidad</span>
+                <h1 class="hero__title">
+                  Compra tus pasajes de bus en Tu360Movilidad
+                </h1>
+                <p class="hero__description">
+                  Ahora compra los pasajes de bus para llegar a tu siguiente
+                  destino. Elige hora, día y tu puesto, sin salir de la cama.
+                </p>
+                <a href="#" class="hero__button">Compra ahora</a>
+              </div>
+
+              <div class="hero__image-wrapper">
+                <img
+                  src="/assets/images/hero-img-tu360.jpg"
+                  alt="Mujer usando app con taza de café"
+                  class="hero__image"
+                />
+
+                <!-- Tarjetas superpuestas -->
+                <div class="hero__card hero__card--1">
+                  <p>Registra tus llaves<br />en la app Mi Bancolombia</p>
+                  <span class="hero__card-icon">→</span>
+                </div>
+                <div class="hero__card hero__card--2">
+                  <p>Descubre lo nuevo de la<br />Sucursal Virtual Personas</p>
+                  <span class="hero__card-icon">→</span>
+                </div>
+              </div>
+            </article>
+            <article class="hero-article">
+              <div class="hero__text">
+                <span class="hero__label">Tu historia escribe la nuestra</span>
+                <h1 class="hero__title">
+                  Tu historia crece, la nuestra también
+                </h1>
+                <p class="hero__description">
+                  Cada paso lo damos contigo. Nos insira acompañarte en cada
+                  capitulo de tu vida
+                </p>
+                <a href="#" class="hero__button">Cuentanos tu historia</a>
+              </div>
+
+              <div class="hero__image-wrapper">
+                <img
+                  src="/assets/images/hero-img-history.jpg"
+                  alt="Mujer usando app con taza de café"
+                  class="hero__image"
+                />
+
+                <!-- Tarjetas superpuestas -->
+                <div class="hero__card hero__card--1">
+                  <p>Registra tus llaves<br />en la app Mi Bancolombia</p>
+                  <span class="hero__card-icon">→</span>
+                </div>
+                <div class="hero__card hero__card--2">
+                  <p>Descubre lo nuevo de la<br />Sucursal Virtual Personas</p>
+                  <span class="hero__card-icon">→</span>
+                </div>
+              </div>
+            </article>
+            <article class="hero-article">
+              <div class="hero__text">
+                <span class="hero__label">Marketplace</span>
+                <h1 class="hero__title">
+                  Este 1 de Julio vuelven tus martes favoritos
+                </h1>
+                <p class="hero__description">
+                  En Amazon.com usa el código BANCOLMARTES y ahorra 10USD por
+                  compras de 60 o más. Los cupones vuelan si se acaban te
+                  aparece cupón invalido. AplicanTyC
+                </p>
+                <a href="#" class="hero__button">Alista tu carrito</a>
+              </div>
+
+              <div class="hero__image-wrapper">
+                <img
+                  src="/assets/images/hero-img-marketplace.png"
+                  alt="Mujer usando app con taza de café"
+                  class="hero__image"
+                />
+
+                <!-- Tarjetas superpuestas -->
+                <div class="hero__card hero__card--1">
+                  <p>Registra tus llaves<br />en la app Mi Bancolombia</p>
+                  <span class="hero__card-icon">→</span>
+                </div>
+                <div class="hero__card hero__card--2">
+                  <p>Descubre lo nuevo de la<br />Sucursal Virtual Personas</p>
+                  <span class="hero__card-icon">→</span>
+                </div>
+              </div>
+            </article>
           </div>
 
-          <ul class="nav-menu">
-            <li><a href="#" class="nav-link">Productos</a></li>
-            <li><a href="#" class="nav-link">Servicios</a></li>
-            <li><a href="#" class="nav-link">Ayuda</a></li>
-            <li><a href="#" class="nav-link">Educación Financiera</a></li>
-          </ul>
-
-          <div class="nav-actions">
-            <button class="btn-search">
-              <i class="fas fa-search" alt="Buscar"></i>
-            </button>
-            <button class="btn-login">Ingresar</button>
-          </div>
-
-          <button class="mobile-menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+          <button class="hero__nav hero__nav--next" aria-label="Siguiente">
+            →
           </button>
         </div>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-background">
-        <img
-          src="#"
-          alt="Familia sonriente usando servicios bancarios digitales"
-          class="hero-image"
-        />
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Nos inspira acompañarte en cada capítulo de tu vida
-          </h1>
-          <p class="hero-subtitle">
-            Disfruta opciones hechas para ti por ser nuestro cliente
-          </p>
-          <div class="hero-actions">
-            <button class="btn-primary">Conoce más</button>
-            <button class="btn-secondary">Ver productos</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Access -->
-    <section class="quick-access">
-      <div class="container">
-        <h2>Accesos rápidos</h2>
-        <div class="quick-grid">
-          <div class="quick-item">
-            <div class="quick-icon">
-              <i class="fas fa-mobile-alt" alt="Icono aplicación móvil"></i>
+      </section>
+      <section class="secction2">
+        <!-- Navigation Header -->
+        <div class="nav-header">
+          <div class="nav-items">
+            <div class="nav-item">
+              <div class="nav-icon icon-card"></div>
+              <div class="nav-text">Trámites digitales</div>
             </div>
-            <h3>Descarga Mi Bancolombia</h3>
-            <p>La nueva app que evoluciona contigo</p>
-          </div>
-          <div class="quick-item">
-            <div class="quick-icon">
-              <i class="fas fa-laptop" alt="Icono sucursal virtual"></i>
+            <div class="nav-item">
+              <div class="nav-icon icon-dollar"></div>
+              <div class="nav-text">Negociar deuda</div>
             </div>
-            <h3>Sucursal Virtual</h3>
-            <p>Más simple, más fácil</p>
-          </div>
-          <div class="quick-item">
-            <div class="quick-icon">
-              <i class="fas fa-qrcode" alt="Icono código QR"></i>
+            <div class="nav-item">
+              <div class="nav-icon icon-receipt"></div>
+              <div class="nav-text">Pagos</div>
             </div>
-            <h3>Nuevo QR de pagos</h3>
-            <p>Recibe pagos sin cobros y al instante</p>
-          </div>
-          <div class="quick-item">
-            <div class="quick-icon">
-              <i class="fas fa-home" alt="Icono inmobiliario"></i>
+            <div class="nav-item">
+              <div class="nav-icon icon-help"></div>
+              <div class="nav-text">Centro de Ayuda</div>
             </div>
-            <h3>Tu360Inmobiliario</h3>
-            <p>Encuentra o vende tu casa</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Promotion Banner -->
-    <section class="promotion-banner">
-      <div class="container">
-        <div class="promotion-content">
-          <div class="promotion-text">
-            <h2>Gánate 1 millón diario con tus llaves Bancolombia</h2>
-            <p>
-              Recibe plata con tus llaves del 15 al 31 de mayo de 2025 y podrás
-              ser uno de los 20 ganadores diarios. Aplica TyC.
-            </p>
-            <button class="btn-primary">Descubre cómo</button>
-          </div>
-          <div class="promotion-image">
-            <img
-              src="#"
-              alt="Ilustración de llaves Bancolombia con premios"
-              class="promo-img"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products-section">
-      <div class="container">
-        <h2>Productos para ti</h2>
-        <div class="products-grid">
-          <div class="product-card">
-            <div class="product-icon">
-              <i class="fas fa-credit-card" alt="Icono tarjeta de crédito"></i>
+            <div class="nav-item">
+              <div class="nav-icon icon-certificate"></div>
+              <div class="nav-text">Certificados bancarios</div>
             </div>
-            <h3>Tarjetas de Crédito</h3>
-            <p>Encuentra la tarjeta ideal para tus necesidades</p>
-            <button class="btn-outline">Ver opciones</button>
-          </div>
-          <div class="product-card">
-            <div class="product-icon">
-              <i class="fas fa-piggy-bank" alt="Icono cuenta de ahorros"></i>
-            </div>
-            <h3>Cuentas de Ahorro</h3>
-            <p>Ahorra y haz crecer tu dinero</p>
-            <button class="btn-outline">Conocer más</button>
-          </div>
-          <div class="product-card">
-            <div class="product-icon">
-              <i class="fas fa-hand-holding-usd" alt="Icono créditos"></i>
-            </div>
-            <h3>Créditos</h3>
-            <p>Es el momento de lograr tus sueños</p>
-            <button class="btn-outline">Simular crédito</button>
-          </div>
-          <div class="product-card">
-            <div class="product-icon">
-              <i class="fas fa-chart-line" alt="Icono inversiones"></i>
-            </div>
-            <h3>Inversiones</h3>
-            <p>Haz que tu dinero trabaje para ti</p>
-            <button class="btn-outline">Invertir ahora</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Help Section -->
-    <section class="help-section">
-      <div class="container">
-        <h2>¿En qué te podemos ayudar?</h2>
-        <div class="help-grid">
-          <div class="help-item">
-            <h3>¿Qué certificados puedo solicitar por la página web?</h3>
-            <p>Conoce todos los certificados disponibles</p>
-          </div>
-          <div class="help-item">
-            <h3>¿Cómo pido un Extracto Bancario?</h3>
-            <p>Aprende a descargar tu extracto</p>
-          </div>
-          <div class="help-item">
-            <h3>¿Cómo consulto mi certificado tributario?</h3>
-            <p>Obtén tu certificado fácilmente</p>
-          </div>
-          <div class="help-item">
-            <h3>¿Cuáles son los canales para descargar extractos?</h3>
-            <p>Descubre todas las opciones disponibles</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Productos</h4>
-            <ul>
-              <li><a href="#">Cuentas</a></li>
-              <li><a href="#">Tarjetas</a></li>
-              <li><a href="#">Créditos</a></li>
-              <li><a href="#">Inversiones</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Servicios</h4>
-            <ul>
-              <li><a href="#">Sucursal Virtual</a></li>
-              <li><a href="#">Mi Bancolombia</a></li>
-              <li><a href="#">Pagos</a></li>
-              <li><a href="#">Transferencias</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Ayuda</h4>
-            <ul>
-              <li><a href="#">Centro de ayuda</a></li>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">PQR</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>Síguenos</h4>
-            <div class="social-links">
-              <a href="#" class="social-link">
-                <i class="fab fa-facebook" alt="Facebook Bancolombia"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="fab fa-twitter" alt="Twitter Bancolombia"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="fab fa-instagram" alt="Instagram Bancolombia"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="fab fa-linkedin" alt="LinkedIn Bancolombia"></i>
-              </a>
+            <div class="nav-item">
+              <div class="nav-icon icon-smile"></div>
+              <div class="nav-text">Solicita tu turno</div>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Bancolombia S.A. Todos los derechos reservados.</p>
-          <p>
-            Nada cambia para ti. Ahora, tus datos los gestiona Grupo Cibest, la
-            casa matriz de Bancolombia S.A.
-          </p>
-        </div>
-      </div>
-    </footer>
+      </section>
+      <secction class="secction3">
+        <!-- Recommendations Section -->
+        <div class="recommendations">
+          <h2>Pensando en ti te recomendamos</h2>
+          <div class="cards-container">
+            <div class="card card-pink">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop"
+                alt="Hombre sonriente"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-category">Tu360Compras</div>
+                <div class="card-title">Ofertas exclusivas para ti</div>
+                <div class="card-description">
+                  Disfruta 0% de interés de 2 a 4 cuotas con tus tarjetas
+                  Bancolombia y muchas ofertas especiales en tus categorías
+                  favoritas. *Aplican TyC.
+                </div>
+                <a href="#" class="card-button">Compra ahora</a>
+              </div>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="card card-green">
+              <img
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=200&fit=crop"
+                alt="Pareja revisando documentos"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-category">Tu360Inmobiliario</div>
+                <div class="card-title">
+                  Vender tu casa nunca fue tan sencillo
+                </div>
+                <div class="card-description">
+                  Publícala en Tu360Inmobiliario en colaboración con Pulppo,
+                  conecta con clientes potenciales y aumenta la visibilidad de
+                  tu inmueble.
+                </div>
+                <a href="#" class="card-button">Vende tu casa</a>
+              </div>
+            </div>
+
+            <div class="card card-yellow">
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=200&fit=crop"
+                alt="Mujer usando móvil"
+                class="card-image"
+              />
+              <div class="card-content">
+                <div class="card-category">Importante</div>
+                <div class="card-title">
+                  Actualizamos nuestra política de tratamiento de datos
+                </div>
+                <div class="card-description">
+                  Nada cambia para ti. Ahora, tus datos los gestiona Grupo
+                  Gibest, la casa matriz de Bancolombia S.A. y otros negocios
+                  del Grupo.
+                </div>
+                <a href="#" class="card-button">Conócela aquí</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </secction>
+      <secction class="secction4">
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="faq-title">Respondemos a tus preguntas</h2>
+          <div class="faq-container">
+            <div class="faq-left">
+              <div class="faq-chatbot">
+                <h3>Háblale ahora</h3>
+                <h2>Resuelve tus dudas preguntándole a Tabot.</h2>
+                <button>Conoce más</button>
+              </div>
+              <a href="#" class="faq-link"
+                >Ver todas las preguntas frecuentes</a
+              >
+            </div>
+
+            <div class="faq-center">
+              <div class="faq-eye"></div>
+            </div>
+
+            <div class="faq-right">
+              <h3>Lo más consultado</h3>
+              <div class="faq-question">
+                <div class="faq-question-icon">?</div>
+                <div class="faq-question-text">
+                  ¿Qué certificados puedo solicitar por la página web de
+                  Bancolombia?
+                </div>
+                <div class="faq-question-arrow">→</div>
+              </div>
+              <div class="faq-question">
+                <div class="faq-question-icon">?</div>
+                <div class="faq-question-text">
+                  ¿Cómo pido un Extracto Bancario por la página web de
+                  Bancolombia?
+                </div>
+                <div class="faq-question-arrow">→</div>
+              </div>
+              <div class="faq-question">
+                <div class="faq-question-icon">?</div>
+                <div class="faq-question-text">
+                  ¿Cómo consulto mi certificado tributario?
+                </div>
+                <div class="faq-question-arrow">→</div>
+              </div>
+              <div class="faq-question">
+                <div class="faq-question-icon">?</div>
+                <div class="faq-question-text">
+                  ¿Cuáles son los canales habilitados para descargar los
+                  extractos?
+                </div>
+                <div class="faq-question-arrow">→</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </secction>
+      <secction class="secction5">
+        <!-- Products Section -->
+        <div class="products-section">
+          <h2 class="products-title">Conoce más de nuestros productos</h2>
+          <div class="products-container">
+            <div class="product-card">
+              <div class="product-icon icon-credit"></div>
+              <div class="product-category">Créditos</div>
+              <div class="product-title">
+                Financia lo que sueñas, quieres y necesitas.
+              </div>
+              <div class="product-description">
+                Es el momento de lograr tus sueños. Opciones ideales para esos
+                proyectos o ideas que necesitan apoyo financiero.
+              </div>
+              <button class="product-button">SABER MÁS</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon icon-bank"></div>
+              <div class="product-category">Tarjetas de crédito</div>
+              <div class="product-title">
+                Paga, compra y gana puntos usando tus tarjetas
+              </div>
+              <div class="product-description">
+                Usando nuestras tarjetas de crédito tú también ganas.
+              </div>
+              <button class="product-button">SABER MÁS</button>
+            </div>
+
+            <div class="product-card">
+              <div class="product-icon icon-shield"></div>
+              <div class="product-category">Seguros</div>
+              <div class="product-title">
+                Tu seguridad es la de todos, con nuestros seguros
+              </div>
+              <div class="product-description">
+                Pensamos en ti y en la seguridad de tu familia.
+              </div>
+              <button class="product-button">SABER MÁS</button>
+            </div>
+          </div>
+        </div>
+      </secction>
+      <secction class="secction6">
+        <div class="interest-section">
+          <h2 class="interest-title">Esto también te puede interesar</h2>
+          <div class="interest-container">
+            <div class="interest-image">
+              <img
+                src="https://images.unsplash.com/photo-1494790108755-2616c6f2dc31?w=500&h=300&fit=crop"
+                alt="Mujer usando móvil en el parque"
+                class="interest-img"
+              />
+              <div class="interest-overlay"></div>
+            </div>
+            <div class="interest-content">
+              <h3>Actualizamos nuestra política de tratamiento de datos</h3>
+              <p>
+                Nada cambia para ti. Ahora, tus datos los gestiona Grupo Gibest,
+                la casa matriz de Bancolombia S.A. y otros negocios del Grupo.
+              </p>
+              <button class="interest-button">Conónócela aquí</button>
+            </div>
+          </div>
+        </div>
+      </secction>
+      <section class="secction7">
+        <div class="contact-section">
+          <h2 class="contact-title">¿Aún tienes dudas?</h2>
+          <div class="contact-container">
+            <div class="contact-item">
+              <div class="contact-icon contact-chat"></div>
+              <div class="contact-text">Chat en línea</div>
+              <div class="contact-link">Escríbenos</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon contact-phone"></div>
+              <div class="contact-text">Llámanos a nuestra línea</div>
+              <div class="contact-link">018000 91 2345</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon contact-callback"></div>
+              <div class="contact-text">Prefieres que te llamemos</div>
+              <div class="contact-link">Cuando quieras</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon contact-social"></div>
+              <div class="contact-text">Contáctanos por redes sociales</div>
+              <div class="contact-social-icons">
+                <span class="social-icon">📘</span>
+                <span class="social-icon">❌</span>
+                <span class="social-icon">📱</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon contact-location"></div>
+              <div class="contact-text">Puntos de atención</div>
+              <div class="contact-link">Visítanos</div>
+            </div>
+          </div>
+          <div class="contact-footer">
+            <a href="#" class="contact-footer-link"
+              >Conoce todas las líneas telefónicas →</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-include="components/footer.html"></div>
   </body>
 </html>
-!-- index.html contenido inicial -->
-

@@ -1,0 +1,200 @@
+body {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  background-color: var(--bg-light);
+  line-height: 1.4;
+}
+
+/* Main content spacer */
+.content-spacer {
+  height: 80vh;
+  background: var(--bg-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+/* Footer Styles - exact replica */
+.footer {
+  background-color: #3a3936;
+  color: #ffffff;
+  padding: 60px 0 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 80px;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.footer-column h3 {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: #cccccc;
+}
+
+/* Contact section - right column */
+.footer-contact-section {
+  flex: 1.2;
+}
+
+.footter-contact-info {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.footter-contact-info p {
+  margin-bottom: 15px;
+}
+
+.footter-contact-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Vigilado section */
+.vigilado-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.vigilado-logo {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 15px;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.vigilado-text {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #ffffff;
+  flex: 1;
+}
+
+/* Social media icons */
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  background-color: #666;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.footer-logo img {
+  width: 180px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+}
+
+/* Social icons with proper symbols */
+.social-whatsapp::before {
+  content: "📱";
+}
+.social-facebook::before {
+  content: "f";
+}
+.social-twitter::before {
+  content: "🐦";
+}
+.social-instagram::before {
+  content: "📷";
+}
+.social-youtube::before {
+  content: "▶";
+}
+.social-linkedin::before {
+  content: "in";
+}

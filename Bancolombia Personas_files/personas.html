@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <!-- Google Tag Manager -->
+     <script async="" src="personas_data/google-analytics_analytics.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WMKWG36');</script>
+        <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>Widget</title>
+  <!-- base href="https://serviciosvirtuales-wd.apps.bancolombia.com/" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://serviciosvirtuales-wd.apps.bancolombia.com/favicon.ico">
+  <script src="personas_data/audio_player.js"></script>
+  <script>
+    window.addEventListener("message", (event) => {
+      close = document.getElementById("iconClose");
+      accept = document.getElementById("btn-accept");
+      menu = document.getElementById("btn-menu");
+      if (event.data.toString().match('CHAT')) {
+         if(close){ close.click();}
+         if(accept){accept.click();}
+          if(menu){ menu.click();}
+          setTimeout(openOption('btn-chat'), 200)
+      }
+      if (event.data.toString().match('CB')) {
+        if(close){ close.click();
+         if(accept){accept.click();}}
+          if(menu){ menu.click();}
+          setTimeout(openOption('btn-callback'), 200)
+      }
+      if (event.data.toString().match('C2C')) {
+        if(close){ close.click();}
+         if(accept){accept.click();}
+          if(menu){ menu.click();}
+          setTimeout(openOption('btn-c2c'), 200)
+      }
+    }, false);
+
+    function openOption(cOption){
+      document.getElementById(cOption).click();
+    }
+  </script>
+  <script type="text/javascript" charset="utf-8" src="personas_data/genesys.js"></script>
+  <style>@import"https://library-sdb.apps.bancolombia.com/bds/2.2.6/bds.min.css"</style><link rel="stylesheet" href="personas_data/styles.4ace68ba6c7247eb.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.4ace68ba6c7247eb.css"></noscript><style>.menu-container[_ngcontent-duh-c27]{display:flex;flex-flow:column;align-items:flex-end;position:fixed;bottom:15px;right:30px;z-index:100}.closed-menu[_ngcontent-duh-c27]{height:0px;overflow:hidden;transition:.2s all;z-index:-1}.open-menu[_ngcontent-duh-c27]{padding-bottom:7px;display:flex;flex-flow:column;overflow:hidden;height:280px;gap:7px;align-content:space-between;transition:.2s all}.open-menu2[_ngcontent-duh-c27]{padding-bottom:7px;display:flex;flex-flow:column;overflow:hidden;height:346px;gap:7px;align-content:space-between;transition:.2s all}.option-menu[_ngcontent-duh-c27]{display:flex;justify-content:flex-end;align-items:center;position:relative;gap:20px}.button-menu[_ngcontent-duh-c27]{background-color:#f0f8ff;border:5px solid}.button-menu[_ngcontent-duh-c27]   em[_ngcontent-duh-c27]{color:#252525}.option-menu[_ngcontent-duh-c27]   span[_ngcontent-duh-c27]{color:#fff}.shaded-screen[_ngcontent-duh-c27]{width:100vw;height:100vh;position:absolute;z-index:99;background:linear-gradient(rgba(44,42,41,.8) 0%,#2C2A29 100%)}em[_ngcontent-duh-c27]{padding-right:33px}</style><style>.basic-container[_ngcontent-duh-c17]{right:419px}.survey-header[_ngcontent-duh-c17]{display:flex;flex-flow:column;font-size:large;border-bottom:1px solid rgb(232,232,232);align-items:center;text-align:center;padding-bottom:9%}.survey-header[_ngcontent-duh-c17]   img[_ngcontent-duh-c17]{height:80px;width:60px}.bc-card[_ngcontent-duh-c17]{min-height:100%}.questions-body[_ngcontent-duh-c17], .end-body[_ngcontent-duh-c17]{display:flex;flex-flow:column;align-items:center;grid-gap:5vh;text-align:center;height:60vh;width:100%;scrollbar-color:blue;overflow-y:scroll}.questions-body[_ngcontent-duh-c17]   .questions-info[_ngcontent-duh-c17]{font-size:17px!important;margin-top:10%;margin-bottom:-6%}.end-body[_ngcontent-duh-c17]   img[_ngcontent-duh-c17]{height:100px;width:80px}.star-ratings-container[_ngcontent-duh-c17]{display:flex;gap:15px}.yellow-star[_ngcontent-duh-c17]{background-color:#fdda24}.gray-start[_ngcontent-duh-c17]{background-color:#f4f4f4}.bc-fab-button-mini[_ngcontent-duh-c17]{height:42px!important;width:42px!important}bc-radio[_ngcontent-duh-c17]{margin-left:30px;border:2px solid #CCC;border-radius:34px;box-sizing:border-box;padding:8px 10px 0;width:20px;display:inline-flex;min-width:60px;width:115px}bc-radio-group[_ngcontent-duh-c17]{width:80%}textarea[_ngcontent-duh-c17]{max-width:300px;min-width:300px;color:#2c2a29!important;font-weight:400!important;margin-top:60px;max-height:65px}.bottom-button[_ngcontent-duh-c17]{width:60%;bottom:40px;margin-top:10px;margin-bottom:20vh}[_ngcontent-duh-c17]::-webkit-scrollbar{width:3px;background-color:transparent}@media only screen and (max-width: 600px){.basic-container[_ngcontent-duh-c17]{right:0!important;position:absolute!important}}</style><style>.basic-container[_ngcontent-duh-c16]{right:419px}.survey-header[_ngcontent-duh-c16]{display:flex;flex-flow:column;font-size:large;border-bottom:1px solid rgb(232,232,232);align-items:center;text-align:center;padding-bottom:9%}.survey-header[_ngcontent-duh-c16]   img[_ngcontent-duh-c16]{height:80px;width:60px}.bc-card[_ngcontent-duh-c16]{min-height:100%}.questions-body[_ngcontent-duh-c16], .end-body[_ngcontent-duh-c16]{display:flex;flex-flow:column;align-items:center;grid-gap:5vh;text-align:center;height:60vh;width:100%;scrollbar-color:blue;overflow-y:scroll}.questions-body[_ngcontent-duh-c16]   .questions-info[_ngcontent-duh-c16]{font-size:17px!important;margin-top:10%;margin-bottom:-6%}.end-body[_ngcontent-duh-c16]   img[_ngcontent-duh-c16]{height:100px;width:80px}.star-ratings-container[_ngcontent-duh-c16]{display:flex;gap:15px}.yellow-star[_ngcontent-duh-c16]{background-color:#fdda24}.gray-start[_ngcontent-duh-c16]{background-color:#f4f4f4}.bc-fab-button-mini[_ngcontent-duh-c16]{height:42px!important;width:42px!important}bc-radio[_ngcontent-duh-c16]{margin-left:30px;border:2px solid #CCC;border-radius:34px;box-sizing:border-box;padding:8px 10px 0;width:20px;display:inline-flex;min-width:60px;width:115px}bc-radio-group[_ngcontent-duh-c16]{width:80%}textarea[_ngcontent-duh-c16]{max-width:300px;min-width:300px;color:#2c2a29!important;font-weight:400!important;margin-top:60px;max-height:65px}.bottom-button[_ngcontent-duh-c16]{width:60%;bottom:40px;margin-top:10px;margin-bottom:20vh}[_ngcontent-duh-c16]::-webkit-scrollbar{width:3px;background-color:transparent}@media only screen and (max-width: 600px){.basic-container[_ngcontent-duh-c16]{right:0!important;position:absolute!important}}</style></head>
+
+  <!-- <script>
+let observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      console.log(mutation)
+        if (!mutation.addedNodes) return
+        for (let i = 0; i < mutation.addedNodes.length; i++) {
+            if (document.getElementById("genesys-messenger") != undefined) {
+                //document.getElementById("genesys-messenger").style.display = "none"
+              // document.getElementById("genesys-messenger").style.zIndex = "-999"
+                //observer.disconnect();
+            }
+            if (document.getElementById("messenger") != undefined) {
+        
+                //document.getElementById("messenger").style.display = "none"
+                //document.getElementById("messenger").style.zIndex = "-999"
+                //observer.disconnect();
+            }
+              var node = document.getElementById("genesys-mxg-container-frame");
+        }
+    })
+})
+setTimeout(() => {
+    observer.observe(document, {
+        childList: true
+        , subtree: true
+        , attributes: false
+        , characterData: false
+    })
+}, 10);
+  </script> -->
+
+  <body #bodyx="" id="body">
+    <meta name="”robots”" content="”noindex,nofollow”">
+    <!-- generic spinner for the entire front end -->
+    <ngx-spinner bdcolor="#f0f0f2" size="large" color="#000000" type="ball-clip-rotate" [fullscreen]="false">
+    </ngx-spinner>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WMKWG36"
+        height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <app-root id="todo" _nghost-duh-c11=""><router-outlet _ngcontent-duh-c11=""></router-outlet><app-root _nghost-duh-c11=""><router-outlet _ngcontent-duh-c11=""></router-outlet><app-menu _nghost-duh-c27=""><container-element _ngcontent-duh-c27=""><div _ngcontent-duh-c27="" id="Menu" class="menu-container"><div _ngcontent-duh-c27="" class="closed-menu"><div _ngcontent-duh-c27="" class="option-menu"><span _ngcontent-duh-c27="">Puntos de atención</span><a _ngcontent-duh-c27="" target="_blank" href="https://www.bancolombia.com/puntos-de-atencion/buscar-en-mapa"><button _ngcontent-duh-c27="" bc-fab-button="" typebutton="secondary" id="btn-location" role="button" tabindex="0" class="bc-fab-button bc-fab-button-secondary"><em _ngcontent-duh-c27="" class="bc-icon">location</em></button></a></div><!----><div _ngcontent-duh-c27="" class="option-menu"><span _ngcontent-duh-c27="">Chat en línea</span><button _ngcontent-duh-c27="" bc-fab-button="" typebutton="secondary" id="btn-chat" role="button" tabindex="0" class="bc-fab-button bc-fab-button-secondary"><em _ngcontent-duh-c27="" class="bc-icon">chat</em></button></div><!----><!----><div _ngcontent-duh-c27="" class="option-menu"><span _ngcontent-duh-c27="">Hablemos por WhatsApp</span><a _ngcontent-duh-c27="" target="_blank" href="https://wa.me/573013536788"><button _ngcontent-duh-c27="" bc-fab-button="" typebutton="secondary" id="btn-whatsapp" role="button" tabindex="0" class="bc-fab-button bc-fab-button-secondary"><em _ngcontent-duh-c27="" class="bc-icon">whatsapp-outline</em></button></a></div><!----><div _ngcontent-duh-c27="" class="option-menu"><span _ngcontent-duh-c27="">Prefieres que te llamemos</span><button _ngcontent-duh-c27="" bc-fab-button="" typebutton="secondary" id="btn-callback" role="button" tabindex="0" class="bc-fab-button bc-fab-button-secondary"><em _ngcontent-duh-c27="" class="bc-icon"> calendar-day</em></button></div><!----><div _ngcontent-duh-c27="" class="option-menu"><span _ngcontent-duh-c27="">Llámanos a nuestra línea</span><button _ngcontent-duh-c27="" bc-fab-button="" typebutton="secondary" id="btn-c2c" role="button" tabindex="0" class="bc-fab-button bc-fab-button-secondary"><em _ngcontent-duh-c27="" class="bc-icon">phone-contact</em></button></div><!----></div><button _ngcontent-duh-c27="" bc-fab-button="" typebutton="secondary" id="btn-menu" class="button-menu bc-fab-button bc-fab-button-secondary" style="border-color: rgb(253, 218, 36);" role="button" tabindex="0"><em _ngcontent-duh-c27="" class="bc-icon">contact-center</em></button></div><!----><!----><!----><!----><!----><!----><!----><!----><!----></container-element><!----><app-survey _ngcontent-duh-c27="" _nghost-duh-c17=""><div _ngcontent-duh-c17="" class="basic-container" hidden=""><div _ngcontent-duh-c17="" bc-card="" class="bc-card"><!----><app-survey-questions _ngcontent-duh-c17="" typesurvey="advisor" _nghost-duh-c16="" hidden=""><!----><!----><!----><div _ngcontent-duh-c16="" class="end-body"><img _ngcontent-duh-c16="" src="personas_data/failure.svg"><h5 _ngcontent-duh-c16="">Error al obtener la encuesta</h5><label _ngcontent-duh-c16=""> Estamos validando para activar de nuevo este servicio </label><button _ngcontent-duh-c16="" bc-button="" sizebutton="small" typebutton="primary" class="bottom-button bc-button-primary bc-button-small">Cerrar</button></div><!----><!----></app-survey-questions><app-survey-questions _ngcontent-duh-c17="" typesurvey="tabot" _nghost-duh-c16="" hidden=""><!----><!----><!----><div _ngcontent-duh-c16="" class="end-body"><img _ngcontent-duh-c16="" src="personas_data/failure.svg"><h5 _ngcontent-duh-c16="">Error al obtener la encuesta</h5><label _ngcontent-duh-c16=""> Estamos validando para activar de nuevo este servicio </label><button _ngcontent-duh-c16="" bc-button="" sizebutton="small" typebutton="primary" class="bottom-button bc-button-primary bc-button-small">Cerrar</button></div><!----><!----></app-survey-questions></div></div></app-survey></app-menu><!----></app-root><!----></app-root>
+  <script src="personas_data/runtime.14427e4b4d7d04ff.js" type="module"></script><script src="personas_data/polyfills.f01802e3e84c598e.js" type="module"></script><script src="personas_data/scripts.bbf82b02a853a0d2.js" defer="defer"></script><script src="personas_data/main.dbffd622e7dfd0a6.js" type="module"></script>
+
+</body></html>
